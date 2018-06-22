@@ -503,4 +503,21 @@ final class Util {
         final float scale = context.getResources().getDisplayMetrics().density;
         return (int) (dpValue * scale + 0.5f);
     }
+
+
+    //根据　年月日　　获得ｗｅｅｋ
+    public static int getWeekByDateStr(int year,int month,int day) {
+
+
+        java.util.Calendar c = java.util.Calendar.getInstance();
+
+        c.set(java.util.Calendar.YEAR, year);
+        c.set(java.util.Calendar.MONTH, month - 1 );
+        c.set(java.util.Calendar.DAY_OF_MONTH, day);
+
+        int weekIndex = c.get(java.util.Calendar.DAY_OF_WEEK);
+
+        return weekIndex;
+    }
+
 }

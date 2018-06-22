@@ -1,0 +1,16 @@
+jakku
+Password: 123456
+
+Alias: jakku
+Password: 123456
+Validity(years) : 25
+
+First and Last Name: Foxconn
+
+Organizational Unit: Foxconn
+
+Organizational: Foxconn 
+
+City or Locality : ShenZhen
+State or Province : GD
+Country Code: 086

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--天气-->
+    <color name="white">#FFFFFF</color>
+    <color name="weather_gray">#b3ffffff</color>
+    <color name="weather_left_linegray">#80ffffff</color>
+    <color name="weather_line">#66ffffff</color>
+
+    //新闻
+    <color name="news_background">#2e2e2e</color>
+    <color name="news_label_background">#33ffffff</color>
+    <color name="news_label_text_color">#b3ffffff</color>
+    <color name="news_title_text_color">#ffffff</color>
+    <color name="news_info_text_color">#4dffffff</color>
+    <color name="news_line_color">#1affffff</color>
+    <color name="news_content_color">#ffffff</color>
+    <color name="news_navigation_text_color">#007eff</color>
+    <color name="news_navigation_background_color">#212121</color>
+    <color name="news_title_bar_text_color">#ffffff</color>
+    <color name="news_scroll_bar_color">#757575</color>
+
+    //人物
+    <color name="figure_background_color">#2e2e2e</color>
+    <color name="figure_name_text_color">#ffffff</color>
+    <color name="figure_experience_text_color">#ffffff</color>
+    <color name="figure_info_text_color">#4dffffff</color>
+    <color name="figure_name_background_color">#212121</color>
+</resources>

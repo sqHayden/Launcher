@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/badgeviewlib/badgeviewlib.iml" filepath="$PROJECT_DIR$/badgeviewlib/badgeviewlib.iml" />
       <module fileurl="file://$PROJECT_DIR$/calendarviewidx/calendarviewidx.iml" filepath="$PROJECT_DIR$/calendarviewidx/calendarviewidx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jakku/jakku.iml" filepath="$PROJECT_DIR$/jakku/jakku.iml" />
       <module fileurl="file://$PROJECT_DIR$/mor-sdk-network-lib/mor-sdk-network-lib.iml" filepath="$PROJECT_DIR$/mor-sdk-network-lib/mor-sdk-network-lib.iml" />
     </modules>
   </component>

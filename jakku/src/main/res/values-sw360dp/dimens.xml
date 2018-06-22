@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--音乐-->
+    <dimen name="music_title_marginBottom">16px</dimen>
+    <dimen name="music_title_width">292px</dimen>
+    <dimen name="music_title_height">29px</dimen>
+    <dimen name="music_title_marginStart">45px</dimen>
+    <dimen name="music_singer_height">292px</dimen>
+    <dimen name="music_singer_marginTitle">16px</dimen>
+    <dimen name="music_album_width">184px</dimen>
+    <dimen name="music_album_height">184px</dimen>
+    <dimen name="music_currentTime_marginStart">32px</dimen>
+    <dimen name="music_album_marginSinger">26px</dimen>
+    <dimen name="music_duration_marginEnd">11dp</dimen>
+    <dimen name="music_seekBar_marginAlbum">32px</dimen>
+    <dimen name="music_mode_width">43px</dimen>
+    <dimen name="music_next_width">38px</dimen>
+    <dimen name="music_play_width">54px</dimen>
+    <dimen name="music_list_title_marginTop">26px</dimen>
+    <dimen name="music_list_artist_marginTitle">13px</dimen>
+    <dimen name="music_list_title_width">199px</dimen>
+    <dimen name="music_list_title_height">24px</dimen>
+    <dimen name="music_list_artist_height">21px</dimen>
+    <dimen name="music_list_index_marginEnd">20px</dimen>
+    <dimen name="music_list_title_marginEnd">14px</dimen>
+    <dimen name="music_play_marginList">81px</dimen>
+    <dimen name="music_list_margin">34px</dimen>
+
+    <dimen name="music_titleSize">30px</dimen>
+    <dimen name="music_singerSize">26px</dimen>
+    <dimen name="music_durationSize">21px</dimen>
+    <dimen name="music_list_titleSize">24px</dimen>
+    <dimen name="music_list_singerSize">21px</dimen>
+    <!--天气-->
+    <dimen name="weather_icon_width">93px</dimen>
+    <dimen name="weather_icon_height">93px</dimen>
+    <dimen name="weather_icon_marginStart">62px</dimen>
+    <dimen name="weather_icon_marginTop">61px</dimen>
+    <dimen name="weather_city_marginIcon">13px</dimen>
+    <dimen name="weather_recycleView_marginCity">24px</dimen>
+    <dimen name="weather_list_date_marginTop">26px</dimen>
+    <dimen name="weather_list_week_marginDate">19px</dimen>
+    <dimen name="weather_list_icon_width">47px</dimen>
+    <dimen name="weather_list_icon_height">47px</dimen>
+    <dimen name="weather_list_icon_marginWeek">19px</dimen>
+    <dimen name="weather_list_icon_marginStart">54px</dimen>
+    <dimen name="weather_list_tem_marginIcon">15px</dimen>
+    <dimen name="weather_recycleView_height">208px</dimen>
+    <dimen name="weather_recycleView_width">155px</dimen>
+    <dimen name="weather_dateWeek_marginTop">21px</dimen>
+    <dimen name="weather_describe_marginDateweek">43px</dimen>
+    <dimen name="weather_describe_marginLeftLine">35px</dimen>
+    <dimen name="weather_temp_marginLeftLine">24px</dimen>
+    <dimen name="weather_line_width">1px</dimen>
+    <dimen name="weather_line_height">119px</dimen>
+    <dimen name="weather_leftLine_marginAir">64px</dimen>
+    <dimen name="weather_rays_marginRecycleView">53px</dimen>
+    <dimen name="weather_rays_marginAir">13px</dimen>
+    <dimen name="weather_rays_marginData">8px</dimen>
+    <dimen name="weather_ray_width">298px</dimen>
+    <dimen name="weather_describe_textSize">49px</dimen>
+    <dimen name="weather_city_textSize">26px</dimen>
+    <dimen name="weather_temp_textSize">34px</dimen>
+    <dimen name="weather_dateWeek_textSize">19px</dimen>
+    <dimen name="weather_ray_textSize">26px</dimen>
+    <dimen name="weather_list_date_textSize">19px</dimen>
+    <dimen name="weather_list_temp_textSize">22px</dimen>
+
+    //calendar
+    <dimen name="calendar_rl_tool_height">30dp</dimen>
+    <dimen name="calendar_rl_tool_margintop">12dp</dimen>
+    <dimen name="calendar_rl_tool_marginleft">12dp</dimen>
+    <dimen name="calendar_rl_tool_marginbottom">6dp</dimen>
+    <dimen name="calendar_selectyear_width">30dp</dimen>
+    <dimen name="calendar_selectyear_marginleft">6dp</dimen>
+    <dimen name="calendar_selectmonth_width">30dp</dimen>
+    <dimen name="calendar_event_marginleft">6dp</dimen>
+    <dimen name="calendar_event_marginright">12dp</dimen>
+    <dimen name="calendar_view_height">0.3dp</dimen>
+    <dimen name="calendar_view_marginleft">9dp</dimen>
+    <dimen name="calendar_view_marginright">9dp</dimen>
+    <dimen name="calendar_dialog_margin">2dp</dimen>
+    <dimen name="calendar_recycler_item_height">30dp</dimen>
+    <dimen name="calendar_recycler_time_marright">12dp</dimen>
+    <dimen name="calendar_recycler_time_marleft">30dp</dimen>
+    <dimen name="calendar_recycler_thing_marleft">18dp</dimen>
+    <dimen name="calendar_recycler_delete_width">67dp</dimen>
+    <dimen name="calendar_textsize_two_six">16sp</dimen>
+    <dimen name="calendar_lunar_textsize">5sp</dimen>
+    <dimen name="calendar_dialog_title_textsize">24sp</dimen>
+    <dimen name="calendar_recycler_textsize">7sp</dimen>
+    <dimen name="calendar_textsize_select">10sp</dimen>
+    <dimen name="calendar_dialog_button_textsize">18sp</dimen>
+    <dimen name="calendar_dialog_edit_textsize">18sp</dimen>
+
+    //splash
+    <dimen name="splash_timeView_margin_top">132dp</dimen>
+    <dimen name="splash_dateView_margin_top">13dp</dimen>
+    <dimen name="splash_clothes_margin_top">32dp</dimen>
+    <dimen name="splash_car_margin_top">11dp</dimen>
+    <dimen name="splash_air_margin_top">11dp</dimen>
+    <dimen name="splash_timeView_textsize">108sp</dimen>
+    <dimen name="splash_dateView_textsize">18sp</dimen>
+    <dimen name="splash_weather_textsize">14sp</dimen>
+    <dimen name="splash_weather_image_width_size">36dp</dimen>
+    <dimen name="splash_weather_image_height_size">36dp</dimen>
+    <dimen name="splash_weather_margin_left">12dp</dimen>
+    <dimen name="splash_weather_tmp_width">132dp</dimen>
+    <dimen name="splash_weather_width">144dp</dimen>
+    <dimen name="splash_weather_margin_left_port">123dp</dimen>
+    <dimen name="splash_weather_margin_left_land">223dp</dimen>
+
+    //home界面
+    <dimen name="home_relativeLayout_margin_start">32px</dimen>
+    <dimen name="home_dataView_margin_left">32px</dimen>
+    <dimen name="home_dataView_layout_marginTop">37px</dimen>
+    <dimen name="home_DataView_textSize">48sp</dimen>
+    <dimen name="home_holiday_marginLeft">21px</dimen>
+    <dimen name="home_iphone_layout_width">55px</dimen>
+    <dimen name="home_iphone_layout_height">55px</dimen>
+
+    <dimen name="home_wifi_layout_marginLeft">16px</dimen>
+    <dimen name="home_wifi_layout_width">28px</dimen>
+    <dimen name="home_wifi_layout_height">21px</dimen>
+
+    <dimen name="home_ipone_layout_marginEnd">115px</dimen>
+    <dimen name="home_message_marginLeft">21px</dimen>
+    <dimen name="home_message_layout_marginEnd">39px</dimen>
+    <dimen name="home_TimeView_textSize">60sp</dimen>
+    <dimen name="home_TimeView_layout_marginTop">28px</dimen>
+    <dimen name="home_weatherIcon_layout_width">71px</dimen>
+    <dimen name="home_weatherIcon_layout_height">71px</dimen>
+    <dimen name="home_weatherIcon_marginTop">19px</dimen>
+    <dimen name="home_home_weather_tmp_marginTop">19px</dimen>
+    <dimen name="home_home_weather_tmp_textSize">25sp</dimen>
+    <dimen name="navigation_icon_size">60dp</dimen>
+
+    <dimen name="nav_header_individua_menu_margin_top">60px</dimen>
+    <dimen name="nav_header_layout_height">120px</dimen>
+    <dimen name="nav_header_ImageView_layout_height">76px</dimen>
+    <dimen name="nav_header_ImageView_margin_left">19px</dimen>
+    <dimen name="nav_header_ImageView_layout_width">76px</dimen>
+    <dimen name="nav_header_text_textSize">25sp</dimen>
+
+    //新闻
+    //新闻标签
+    <dimen name="news_label_width">82px</dimen>
+    <dimen name="news_label_height">26px</dimen>
+    <dimen name="news_label_margin_left">26px</dimen>
+    <dimen name="news_label_margin_top">24px</dimen>
+    <dimen name="news_label_radius">2px</dimen>
+    <dimen name="news_label_text_size">17px</dimen>
+    //新闻标题
+    <dimen name="news_title_text_size">28px</dimen>
+    //新闻信息
+    <dimen name="news_info_text_size">21px</dimen>
+    <dimen name="news_info_margin_top">21px</dimen>
+    <dimen name="news_info_padding_left">26px</dimen>
+    <dimen name="news_info_padding_right">26px</dimen>
+    //新闻线条
+    <dimen name="news_line_margin_top">13px</dimen>
+    <dimen name="news_line_margin_left">26px</dimen>
+    <dimen name="news_line_margin_right">26px</dimen>
+    <dimen name="news_line_height">1px</dimen>
+    //新闻内容
+    <dimen name="news_content_margin_top">15px</dimen>
+    <dimen name="news_content_margin_left">15px</dimen>
+    <dimen name="news_content_margin_right">15px</dimen>
+    <dimen name="news_content_line_space">28px</dimen>
+    <dimen name="news_content_text_size">28px</dimen>
+    //新闻导航栏
+    <dimen name="news_navigation_bar_margin_left">31px</dimen>
+    <dimen name="news_navigation_bar_margin_right">31px</dimen>
+    <dimen name="news_navigation_bar_margin_bottom">15px</dimen>
+    <dimen name="news_navigation_bar_text_size">23px</dimen>
+    <dimen name="news_navigation_bar_height">52px</dimen>
+    //新闻标题栏
+    <dimen name="news_title_bar_padding_left">26px</dimen>
+    <dimen name="news_title_bar_margin_top">23px</dimen>
+    <dimen name="news_title_bar_text_size">21px</dimen>
+    <dimen name="news_title_bar_height">51px</dimen>
+    <dimen name="news_title_bar_line_height">1px</dimen>
+    //新闻滚动条
+    <dimen name="news_scroll_bar_margin_right">10px</dimen>
+    <dimen name="news_scroll_bar_margin_left">10px</dimen>
+    <dimen name="news_scroll_bar_margin_top">52px</dimen>
+    <dimen name="news_scroll_bar_margin_bottom">52px</dimen>
+    <dimen name="news_scroll_bar_width">4px</dimen>
+    <dimen name="news_scroll_bar_radius">2px</dimen>
+
+    //人物
+    //人物人名
+    <dimen name="figure_name_text_size">18px</dimen>
+    <dimen name="figure_name_padding_top">23px</dimen>
+    <dimen name="figure_name_padding_left">24px</dimen>
+    <dimen name="figure_name_height">52px</dimen>
+
+    //人物详情
+    <dimen name="figure_information_margin_top">52px</dimen>
+
+    //人物图片
+    <dimen name="figure_image_width">172px</dimen>
+    <dimen name="figure_image_height">230px</dimen>
+    <dimen name="figure_image_margin_top">26px</dimen>
+    <dimen name="figure_image_margin_left">30px</dimen>
+    <dimen name="figure_image_radius">5px</dimen>
+
+    //人物简介
+    <dimen name="figure_experience_text_size">26px</dimen>
+    <dimen name="figure_experience_margin_right">30px</dimen>
+    <dimen name="figure_experience_margin_left">24px</dimen>
+    <dimen name="figure_experience_line_space">28px</dimen>
+    <dimen name="figure_experience_padding_top">5px</dimen>
+    <dimen name="figure_experience_padding_bottom">20px</dimen>
+
+    //人物信息
+    <dimen name="figure_info_text_size">18px</dimen>
+    <dimen name="figure_info_margin_left">21px</dimen>
+    <dimen name="figure_info_margin_right">21px</dimen>
+    <dimen name="figure_info_margin_top1">21px</dimen>
+    <dimen name="figure_info_margin_top2">15px</dimen>
+    <dimen name="figure_info_margin_top3">15px</dimen>
+    <dimen name="figure_info_width1">74px</dimen>
+    <dimen name="figure_info_width2">148px</dimen>
+
+
+</resources>

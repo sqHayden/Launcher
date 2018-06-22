@@ -2,8 +2,8 @@ apply plugin: 'com.android.library'
 
 android {
     // Top-level build file where you can add configuration options common to all sub-projects/modules.
-    compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
 
 //    buildscript {
 //        repositories {
@@ -14,8 +14,8 @@ android {
 //    }
 
     defaultConfig {
-        minSdkVersion rootProject.ext.minSdkVersion
-        targetSdkVersion rootProject.ext.targetSdkVersion
+        minSdkVersion 19
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
 
@@ -53,7 +53,7 @@ dependencies {
 //    testImplementation "junit:junit:$rootProject.junitVersion"
 //
     //noinspection GradleDependency
-    implementation "com.android.support:recyclerview-v7:$rootProject.supportLibraryVersion"
-    implementation "org.greenrobot:eventbus:$rootProject.eventbusVersion"
+    implementation "com.android.support:recyclerview-v7:26.0.2"
+    compile 'org.greenrobot:eventbus:3.0.0'
 }
 //apply from: '../script/gradle-jcenter-push.gradle'

@@ -29,6 +29,7 @@ import android.view.View;
 import android.view.animation.LinearInterpolator;
 import android.widget.FrameLayout;
 
+
 import org.greenrobot.eventbus.EventBus;
 
 import java.lang.reflect.Constructor;
@@ -528,9 +529,17 @@ public class CalendarView extends FrameLayout {
         if (mWeekPager.getVisibility() == VISIBLE) {
             mWeekPager.scrollToCalendar(year, month, day);
         } else {
+            Log.d(TAG, "scrollToCalendar: 我走了着了　ｓｂ了");
             mMonthPager.scrollToCalendar(year, month, day);
         }
     }
+
+    public void scrollToDate(int year, int month, int day){
+        mWeekPager.scrollToCalendar(year, month, day);
+
+    }
+
+
 
     /**
      * 滚动到某一年
@@ -645,33 +654,11 @@ public class CalendarView extends FrameLayout {
             Log.d(TAG, "calendar90 ");
             mDelegate.mDateSelectedListener.onDateSelected(calendar);
         }
-//        mWeekBar.animate()
-//                .translationY(0)
-//                .setInterpolator(new LinearInterpolator())
-//                .setDuration(180)
-//                .setListener(new AnimatorListenerAdapter() {
-//                    @Override
-//                    public void onAnimationEnd(Animator animation) {
-//                        super.onAnimationEnd(animation);
-                        mWeekBar.setVisibility(VISIBLE);
-                        if (mParentLayout != null && mParentLayout.mContentView != null) {
-                            mParentLayout.mContentView.setVisibility(VISIBLE);
-                        }
-//                    }
-//                });
-//        mMonthPager.animate()
-//                .scaleX(1)
-//                .scaleY(1)
-//                .setDuration(180)
-//                .setInterpolator(new LinearInterpolator())
-//                .setListener(new AnimatorListenerAdapter() {
-//                    @Override
-//                    public void onAnimationEnd(Animator animation) {
-//                        super.onAnimationEnd(animation);
-                        mMonthPager.setVisibility(VISIBLE);
-
-//                    }
-//                });
+        mWeekBar.setVisibility(VISIBLE);
+        if (mParentLayout != null && mParentLayout.mContentView != null) {
+            mParentLayout.mContentView.setVisibility(VISIBLE);
+        }
+        mMonthPager.setVisibility(VISIBLE);
     }
 
     /**
@@ -688,6 +675,30 @@ public class CalendarView extends FrameLayout {
 
     }
 
+
+    /**
+     * 根据蓦然返回的年月日，滚动到指定位置
+     *
+     */
+    public void selectCurrent(int year,int month,int day) {
+        mSelectLayout.setVisibility(GONE);
+        mWeekBar.setVisibility(VISIBLE);
+        mMonthPager.setVisibility(VISIBLE);
+        view.setVisibility(VISIBLE);
+        Calendar calendar = new Calendar();
+        calendar.setYear(year);
+        calendar.setMonth(month);
+        calendar.setDay(day);
+        calendar.setLunar(lunarCalendar.getLunarText(mContext, calendar));
+        calendar.setWeek(Util.getWeekByDateStr(year,month,day));
+        mDelegate.mSelectedCalendar = calendar;
+        Log.d(TAG, "selectCurrent: 语音　走了这里");
+        mWeekBar.setVisibility(VISIBLE);
+        if (mParentLayout != null && mParentLayout.mContentView != null) {
+            mParentLayout.mContentView.setVisibility(VISIBLE);
+        }
+        mMonthPager.setVisibility(VISIBLE);
+    }
 
     /**
      * 年份改变事件

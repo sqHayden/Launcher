@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.idx.jakku"
+    >
+
+    <application
+        >
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask">
+        </activity>
+
+        <service
+            android:name=".service.JakkuService"
+            android:exported="true" />
+
+        <receiver
+            android:name=".receiver.GlobalBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".weather.WeatherActivity" />
+        <activity android:name=".music.MusicActivity" />
+        <activity android:name=".calendar.CalenderActivity" />
+        <activity android:name=".figure.FigureActivity" />
+        <activity android:name=".news.NewsActivity" />
+    </application>
+
+</manifest>

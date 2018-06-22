@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/right"
+    tools:context="com.idx.jakku.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.idx.jakku.calendar.TimeView
+                android:id="@+id/timeView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/splash_timeView_textsize"
+                android:textColor="#ffffff"/>
+
+            <com.idx.jakku.utils.DataView
+                android:layout_marginTop="40dp"
+                android:id="@+id/dataTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/home_DataView_textSize"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/wifi_image"
+            android:layout_marginTop="@dimen/home_dataView_layout_marginTop"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/home_iphone_layout_width"
+            android:layout_height="@dimen/home_iphone_layout_height"
+            android:layout_marginLeft="@dimen/home_message_marginLeft"
+            android:layout_marginEnd="@dimen/home_message_layout_marginEnd" />
+
+    </RelativeLayout>
+
+</FrameLayout>

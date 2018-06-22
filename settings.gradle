@@ -1,1 +1,1 @@
-include ':app', ':calendarviewidx', ':badgeviewlib', ':mor-sdk-network-lib'
+include ':app', ':badgeviewlib', ':mor-sdk-network-lib', ':jakku', ':calendarviewidx'

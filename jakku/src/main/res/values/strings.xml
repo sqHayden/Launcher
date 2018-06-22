@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">JakkuApp</string>
+    <!--天气-->
+    <string name="weather_not_find1">查询不到</string>
+    <string name="weather_not_find2">的天气信息</string>
+    <string name="weather_today">今天</string>
+    <string name="weather_aqi">空气质量</string>
+    <string name="weather_rays">紫外线指数</string>
+    <string name="weather_yes">确定</string>
+    <!--音乐-->
+    <string name="music_not_find">找到不到音乐</string>
+    <string name="music_query">播放音乐</string>
+    <string name="music_not_support">暂不支持此种问话</string>
+    //calendar
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="add_event">添加事件</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="now">现在</string>
+    <string name="week">星期</string>
+    <string name="sunday">日</string>
+    <string name="lunar_calendar">农历</string>
+    <string name="yes">是</string>
+    <string name="is_the_weekend">是周末</string>
+    <string name="is_usual_day">是平常日</string>
+    <string name="no_arrangement">没有安排事情</string>
+    <string name="please_select_date">请选择日期</string>
+    <string name="please_add_event">请添加事件</string>
+    <string name="delete">删除</string>
+
+    //新闻
+    <string name="source">来源：</string>
+    <string name="news_next">下一条</string>
+    <string name="news_previous">上一条</string>
+    <string name="news_pause">好的， 已为您暂停！</string>
+    <string name="news_details">内容详情如下： </string>
+    <string name="auto_reader_stop">自动滑动已停止！</string>
+    <string name="no_have_news">暂无相关新闻！</string>
+    <string name="no_support_cmd">抱歉！暂不支持此指令！</string>
+    <string name="no_previous_news">这是第一条新闻，没有上一条！</string>
+    <string name="no_next_news">这是最后一条新闻，没有下一条!</string>
+    <string name="broadcast_failure">当前网络不稳定，播报失败！</string>
+    <string name="news_broadcast_error">播报出错，请稍后重试！</string>
+
+    //人物
+    <string name="figure_name">人名</string>
+    <string name="figure_experience">人物简介</string>
+    <string name="figure_details">的信息如下：</string>
+    <string name="figure_message_loading">加载中......</string>
+    <string name="figure_pause">好的， 已为您暂停！</string>
+    <string name="figure_who">是谁</string>
+    <string name="no_message">抱歉！查询不到相关信息！</string>
+
+</resources>
