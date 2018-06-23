@@ -27,6 +27,7 @@ import com.amap.api.location.AMapLocation;
 import com.baidu.android.common.logging.Log;
 import com.google.gson.Gson;
 import com.hyphenate.chat.EMClient;
+import com.idx.jakku.service.JakkuService;
 import com.idx.launcher.BaseActivity;
 import com.idx.launcher.LauncherApplication;
 import com.idx.launcher.R;
@@ -118,10 +119,19 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
         android.util.Log.d(TAG, "onCreate: 开始时间" + System.currentTimeMillis());
         Log.d(TAG, "onCreate:");
         setContentView(R.layout.activity_home);
+
+        //开启naboo服务
         if (!isServiceRunning(SpeakService.class.getName())) {
-            android.util.Log.d(TAG, "onCreate: 开启服务");
+            android.util.Log.d(TAG, "onCreate: 开启naboo服务");
             startService(new Intent(HomeActivity.this, SpeakService.class));
         }
+
+        //开启jakku服务
+        if(!isServiceRunning(JakkuService.class.getName())){
+            android.util.Log.i(TAG, "onCreate: 开启jakku服务");
+            startService(new Intent(HomeActivity.this,JakkuService.class));
+        }
+
         initView();
         //侧滑栏配置
 

@@ -757,7 +757,7 @@ public class SpeakService extends Service {
         ScenesDataEntity scenesDataEntity = ((LauncherApplication) getApplication()).getDataEntity().getScenes().get(0);
         String pageId = scenesDataEntity.getPage_id();
         String queryId = scenesDataEntity.getQuery_id();
-        ImoranManager.getInstance(getBaseContext()).clearContext(pageId, queryId, mClearRequestCallback);
+//        ImoranManager.getInstance(getBaseContext()).clearContext(pageId, queryId, mClearRequestCallback);
         ImoranManager.getInstance(getBaseContext()).destroy();
         mTTSManager.destroy();
         if (mSpeakDialog != null) {

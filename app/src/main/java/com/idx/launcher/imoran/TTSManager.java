@@ -132,17 +132,22 @@ public class TTSManager {
     }
 
     public void speak(String text, boolean enableGlobalListener) {
-        if (mCallback != null) {
-            mCallback = null;
-        }
-        mEnable = enableGlobalListener;
-        if (mTTSClient != null) {
-            if (enableGlobalListener) {
-                mTTSClient.play(text, "playVoice", mListener);
-            } else {
-                mTTSClient.play(text);
+        try {
+            if (mCallback != null) {
+                mCallback = null;
             }
+            mEnable = enableGlobalListener;
+            if (mTTSClient != null) {
+                if (enableGlobalListener) {
+                    mTTSClient.play(text, "playVoice", mListener);
+                } else {
+                    mTTSClient.play(text);
+                }
+            }
+        } catch (Exception e){
+            e.printStackTrace();
         }
+
     }
 
     public void enableGlobalListener(boolean enable){
@@ -183,7 +188,6 @@ public class TTSManager {
     public void destroy() {
         if (mTTSClient != null) {
             mTTSClient.stop();
-            mTTSClient.destroy();
             mTTSClient = null;
         }
         INSTANCE = null;

@@ -108,7 +108,6 @@ public class ImoranManager {
      */
     public synchronized void destroy() {
         if (mImoran != null) {
-            mImoran.destroy();
             mImoran = null;
         }
         INSTANCE = null;

@@ -103,7 +103,6 @@ public class ASRManager {
         if (mRecognizer != null) {
             mRecognizer.stopWakeup();
             mRecognizer.stop();
-            mRecognizer.close();
             mRecognizer = null;
         }
         INSTANCE = null;

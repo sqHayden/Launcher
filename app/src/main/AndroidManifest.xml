@@ -58,7 +58,19 @@
         <activity android:name="com.idx.launcher.map.RouteNaviActivity" />
 
         <service android:name="com.amap.api.location.APSService" />
-        <service android:name="com.idx.launcher.service.SpeakService" />
+        <service android:name="com.idx.launcher.service.SpeakService" >
+            <intent-filter>
+                <action android:name="com.idx.launcher.service"/>
+            </intent-filter>
+        </service>
+
+        <receiver android:name="com.idx.launcher.broadcastreceiver.JakkuServiceReceiver">
+            <intent-filter>
+                <action android:name="com.idx.launcher.jakku.close"/>
+                <action android:name="com.idx.launcher.jakku.open"/>
+            </intent-filter>
+        </receiver>
+        
         <!-- 设置环信 -->
         <meta-data
             android:name="EASEMOB_APPKEY"

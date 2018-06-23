@@ -17,13 +17,10 @@ import android.util.Log;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
 
 import com.idx.jakku.data.JsonData;
 import com.idx.jakku.data.JsonUtil;
 import com.idx.jakku.service.DataListener;
-import com.idx.jakku.service.UDPDataListener;
 import com.idx.jakku.service.IService;
 import com.idx.jakku.service.JakkuService;
 import com.idx.jakku.utils.NetStatusUtils;
@@ -52,7 +49,8 @@ public class MainActivity extends BaseActivity implements DataListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        Log.i("TestDemo", "onCreate: ");
+        setContentView(R.layout.activity_jakku);
         initView();
     }
 
@@ -92,6 +90,10 @@ public class MainActivity extends BaseActivity implements DataListener {
 //                    String port = mTcpServer.getPort() + "";
 //                    Log.d(TAG, "send TCP port=" + port);
 //                    mUdpServer.sendMsg(port);
+                    //发广播通知naboo自己把自己关了
+                    Intent intent = new Intent("com.idx.launcher.jakku.close");
+                    sendBroadcast(intent);
+                    //开启这个
                     mIService.sendTcpPort();
                     mDialog.dismiss();
                 }

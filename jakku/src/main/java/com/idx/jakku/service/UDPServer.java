@@ -76,6 +76,7 @@ public class UDPServer {
                         Log.d(TAG, "run: ready");
                         byte[] data = new byte[1024];
                         DatagramPacket packet = new DatagramPacket(data, data.length, fromGroup, port);
+                        Log.i("TestDemo", "已创建，正在监听中...");
                         receiveSocket.receive(packet);
                         String ip = packet.getAddress().getHostAddress();
                         String message;

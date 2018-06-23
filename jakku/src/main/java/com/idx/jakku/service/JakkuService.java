@@ -54,10 +54,14 @@ public class JakkuService extends Service {
                         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);
                     }
+                    Log.i("TestDemo", "呼叫是否要建立连接...");
                     sendBroadcast(new Intent(Intents.ACTION_REQUEST_TCP_PORT));
                     break;
                 case CONSTANT_UDP_REQUEST_CLOSE_TCP_PORT:
+                    Log.i("TestDemo", "呼叫关闭连接...");
                     mUdpServer.sendMsg("disconnect success");
+                    //先在这儿处理naboo的开启工作
+                    sendBroadcast(new Intent("com.idx.launcher.jakku.open"));
                     if (mDataListener != null) {
                         mDataListener.onFinish();
                     }
@@ -79,6 +83,9 @@ public class JakkuService extends Service {
     @Override
     public void onCreate() {
         super.onCreate();
+
+        Log.i("TestDemo", "onCreate: 服务已创建....");
+
         initUDPServer();
         initTCPServer();
     }
@@ -91,8 +98,10 @@ public class JakkuService extends Service {
             @Override
             public void onReceived(String ip, String msg) {
                 if (msg.equals("请求port")) {
+                    Log.i("TestDemo", "onReceived: 接收到了UDP连接请求");
                     sendMessage(CONSTANT_UDP_REQUEST_PORT, msg);
                 } else if (msg.equals("close tcp")){
+                    Log.i("TestDemo", "onReceived: 接收到了UDP关闭请求");
                     sendMessage(CONSTANT_UDP_REQUEST_CLOSE_TCP_PORT, msg);
                 }
             }
