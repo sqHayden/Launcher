@@ -9,6 +9,7 @@ import android.os.Handler;
 import android.os.IBinder;
 import android.os.Message;
 import android.support.v4.widget.NestedScrollView;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
@@ -35,6 +36,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FigureActivity extends BaseActivity {
+
+    private static final String TAG="shaoqiFigure";
 
     private IService mIService;
     private List<Figure> mFigures = new ArrayList<>();
@@ -172,7 +175,8 @@ public class FigureActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_figure);
+        Log.i(TAG, "onCreate: ");
+        setContentView(R.layout.jakku_figure);
         initView();
     }
     private void initView() {

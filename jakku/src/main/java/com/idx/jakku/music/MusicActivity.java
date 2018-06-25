@@ -4,11 +4,10 @@ import android.annotation.SuppressLint;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.content.ServiceConnection;
+import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
-import android.os.Bundle;
 import android.os.Message;
-import android.support.annotation.Nullable;
 import android.text.TextUtils;
 import android.util.Log;
 import android.widget.ImageView;
@@ -27,7 +26,6 @@ import com.idx.jakku.music.data.ContentMusic;
 import com.idx.jakku.music.data.ImoranResponseMusic;
 import com.idx.jakku.music.data.Song;
 import com.idx.jakku.music.utils.ToastUtil;
-import com.idx.jakku.service.DataListener;
 import com.idx.jakku.service.IService;
 import com.idx.jakku.service.JakkuService;
 import com.idx.jakku.weather.utils.ImoranResponseToBeanUtils;
@@ -39,7 +37,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MusicActivity extends BaseActivity {
-    private static final String TAG = MusicActivity.class.getSimpleName();
+    private static final String TAG="shaoqiMusic";
     private IService mIService;
     //开始时间，音乐时长，音乐名，歌手
     private TextView mStartText, mEndText, mTitle, mArtist;
@@ -118,7 +116,8 @@ public class MusicActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_music);
+        Log.i(TAG, "onCreate: ");
+        setContentView(R.layout.jakku_music);
         setListener();
         mFlag = true;
     }

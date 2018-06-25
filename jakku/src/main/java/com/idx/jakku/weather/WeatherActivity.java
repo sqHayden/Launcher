@@ -1,15 +1,13 @@
 package com.idx.jakku.weather;
 
-import android.annotation.SuppressLint;
 import android.content.ComponentName;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.ServiceConnection;
+import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
-import android.os.Message;
 import android.support.v7.app.AlertDialog;
-import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -21,8 +19,6 @@ import com.idx.jakku.BaseActivity;
 import com.idx.jakku.R;
 import com.idx.jakku.data.JsonData;
 import com.idx.jakku.data.JsonUtil;
-import com.idx.jakku.service.DataListener;
-import com.idx.jakku.service.UDPDataListener;
 import com.idx.jakku.service.IService;
 import com.idx.jakku.service.JakkuService;
 import com.idx.jakku.weather.adapter.WeatherAdapter;
@@ -41,7 +37,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class WeatherActivity extends BaseActivity {
-    private static final String TAG=WeatherActivity.class.getSimpleName();
+    private static final String TAG="shaoqiWeather";
     private IService mIService;
     private ImoranResponse imoranResponse;
     private List<Weather> mWeather = new ArrayList<>();
@@ -92,7 +88,8 @@ public class WeatherActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_weather);
+        Log.i(TAG, "onCreate: ");
+        setContentView(R.layout.jakku_weather);
         setListener();
         flag = true;
     }

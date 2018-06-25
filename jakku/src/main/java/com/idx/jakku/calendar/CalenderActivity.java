@@ -31,7 +31,7 @@ import com.idx.jakku.service.JakkuService;
 public class CalenderActivity extends BaseActivity implements View.OnClickListener, CalendarView.OnYearChangeListener, CalendarView.OnDateSelectedListener, Iview {
 
   //  private static final String TAG = CalendarFragment.class.getSimpleName();
-  private static final String TAG = "CalenderActivity";
+  private static final String TAG="shaoqiCalender";
 
 
     private Presenter presenter;
@@ -213,7 +213,7 @@ public class CalenderActivity extends BaseActivity implements View.OnClickListen
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_calendar);
+        setContentView(R.layout.jakku_calendar);
         Log.d(TAG, "onCreate: ");
         initView();
         if (savedInstanceState != null && savedInstanceState.getBoolean("year")){

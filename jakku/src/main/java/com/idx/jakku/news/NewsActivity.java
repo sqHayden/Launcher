@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
 import android.os.Message;
-import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
@@ -18,12 +17,9 @@ import android.widget.Toast;
 
 import com.idx.jakku.BaseActivity;
 import com.idx.jakku.R;
-import com.idx.jakku.data.JsonData;
-import com.idx.jakku.data.JsonUtil;
 import com.idx.jakku.music.utils.ToastUtil;
 import com.idx.jakku.news.data.NewsDetail;
 import com.idx.jakku.news.util.MyTextView;
-import com.idx.jakku.service.DataListener;
 import com.idx.jakku.service.IService;
 import com.idx.jakku.service.JakkuService;
 import com.idx.jakku.utils.HtmlUtils;
@@ -34,7 +30,7 @@ import java.util.List;
 
 public class NewsActivity extends BaseActivity {
 
-    private static final String TAG = "NewsActivity";
+    private static final String TAG="shaoqiNews";
     private IService mIService;
     private int newsIndex;
     private int number;
@@ -176,7 +172,8 @@ public class NewsActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_news);
+        Log.i(TAG, "onCreate: ");
+        setContentView(R.layout.jakku_news);
         //绑定组件
         initView();
     }

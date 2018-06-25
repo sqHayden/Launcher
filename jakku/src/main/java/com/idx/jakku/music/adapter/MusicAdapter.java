@@ -50,7 +50,7 @@ public class MusicAdapter extends BaseAdapter {
         ViewHolder viewHolder=null;
         if (view==null){
             viewHolder=new ViewHolder();
-            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.music_list,null);
+            view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.music_list_jakku,null);
             viewHolder.musicIdex=view.findViewById(R.id.music_list_id);
             viewHolder.musicName=view.findViewById(R.id.music_list_title);
             viewHolder.musicSinger=view.findViewById(R.id.music_list_singer);

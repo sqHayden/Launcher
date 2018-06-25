@@ -14,6 +14,6 @@ import com.idx.jakku.R;
 public class EnglishWeekBar extends WeekBar {
     public EnglishWeekBar(Context context) {
         super(context);
-        LayoutInflater.from(context).inflate(R.layout.week_bar, this, true);
+        LayoutInflater.from(context).inflate(R.layout.week_bar_jakku, this, true);
     }
 }

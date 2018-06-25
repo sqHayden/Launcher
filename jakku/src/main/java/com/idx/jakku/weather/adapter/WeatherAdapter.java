@@ -1,6 +1,5 @@
 package com.idx.jakku.weather.adapter;
 
-import android.graphics.Color;
 import android.support.annotation.Nullable;
 
 import android.support.v7.widget.RecyclerView;
@@ -36,7 +35,7 @@ public class WeatherAdapter extends RecyclerView.Adapter<WeatherAdapter.WeatherV
     @Override
     @Nullable
     public WeatherViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.weather_list,null);
+        View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.weather_list_jakku,null);
         WeatherViewHolder viewHolder=new WeatherViewHolder(view);
         viewHolder.weather_date=(TextView)view.findViewById(R.id.weather_tomorrow_time);
         viewHolder.weather_week=(TextView)view.findViewById(R.id.weather_tomorrow_week);
